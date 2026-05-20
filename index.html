@@ -67,7 +67,55 @@
   .btn-wa{background:#25d366;color:#073b1e}
   .btn-wa:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(37,211,102,.45)}
   .btn-outline{background:transparent;border:2px solid var(--navy);color:var(--navy)}
-  .btn-outline:hover{background:var(--navy);color:#fff;transform:translateY(-3px)}
+  /* Premium Call Button */
+.call-btn{
+  background:linear-gradient(135deg,#11224e,#1c3a86);
+  color:#fff;
+  border:2px solid #f5b417;
+  box-shadow:0 10px 24px rgba(17,34,78,.25);
+  padding:14px 22px;
+  min-width:220px;
+  justify-content:flex-start;
+  gap:14px;
+  transition:all .3s ease;
+}
+
+.call-btn:hover{
+  transform:translateY(-4px) scale(1.02);
+  box-shadow:0 18px 34px rgba(17,34,78,.35);
+}
+
+.call-btn .call-icon{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:rgba(255,255,255,.14);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.1rem;
+  flex-shrink:0;
+}
+
+.call-btn span{
+  display:flex;
+  flex-direction:column;
+  line-height:1.2;
+}
+
+.call-btn small{
+  font-size:.72rem;
+  opacity:.78;
+  font-weight:500;
+  letter-spacing:.03em;
+}
+
+.call-btn strong{
+  font-family:'Sora',sans-serif;
+  font-size:1rem;
+  font-weight:700;
+  color:#fff;
+}
 
   /* ---------- nav ---------- */
   header{
@@ -526,9 +574,7 @@
 
 <!-- ===== TOP BAR ===== -->
 <div class="topbar">
-  <span>📞 Call / WhatsApp <b>7588201439</b></span>
-  <span>📍 Yavatmal Road, Nandgaon Khandeshwar, Amravati 444708</span>
-  <span>🎓 New Batch Starts <b>10 June</b></span>
+  <span>✨ <b>Anyone Can Teach. Few Can Mentor.</b></span>
 </div>
 
 <!-- ===== HEADER ===== -->
@@ -583,7 +629,7 @@
     </div>
     <div class="hero-card reveal">
       <h3>Why MentoraX Works</h3>
-      <p class="sub">Success Tumhara, Guidance Hamara.</p>
+      <p class="sub">Success Tumhara, Guidance Humara.</p>
       <div class="hc-list">
         <div class="hc-item">
           <div class="hc-ic">👨‍🏫</div>
@@ -789,15 +835,15 @@
     <div class="steps">
       <div class="step reveal">
         <h3>Concept Teaching</h3>
-        <p>First hour — clear conceptual teaching with real-life examples and visual aids.</p>
+        <p>Clear conceptual teaching with real-life examples, visual aids and step-by-step explanations.</p>
       </div>
       <div class="step reveal">
         <h3>Problem Solving</h3>
-        <p>Second hour — guided practice to build problem-solving speed and accuracy.</p>
+        <p>Guided practice on exam-pattern questions to build speed, accuracy and strong application skills.</p>
       </div>
       <div class="step reveal">
         <h3>Doubt Solving</h3>
-        <p>Third hour — dedicated doubt resolution so no question goes unanswered.</p>
+        <p>Dedicated doubt resolution sessions so no question goes unanswered and every concept sticks.</p>
       </div>
     </div>
     <div class="schedule-band">
@@ -806,7 +852,7 @@
       <div class="sb"><div class="d">SUNDAY</div><h4>Rest Day</h4><p>Self-study, revision &amp; recovery to prevent burnout.</p></div>
     </div>
     <p style="text-align:center;margin-top:24px;color:var(--muted);font-size:.92rem">
-      🌅 Morning &amp; 🌆 Evening batches available — choose what fits your school schedule.
+      🌅 Morning &amp; 🌆 Evening batches available — choose what fits your schedule.
     </p>
   </div>
 </section>
@@ -825,7 +871,8 @@
         <h3>JEE / NEET Program</h3>
         <p class="course-note">Complete 2-Year Integrated Course</p>
         <p class="price-old">Actual Fees: ₹1,30,000</p>
-        <p class="price">₹80,000 <small>/ early bird offer</small></p>
+        <div class="opt"><span>Without Tablet</span><b>₹80,000</b></div>
+        <div class="opt"><span>With Tablet</span><b>₹90,000</b></div>
         <ul>
           <li>Full Class 11th + 12th syllabus coverage</li>
           <li>Daily classes — Morning / Evening</li>
@@ -856,7 +903,7 @@
       <span class="ic">💳</span>
       <div>
         <b>Flexible Payment Option —</b>
-        <p>Pay in 5 easy EMIs within 6 months. Quality coaching without financial burden.</p>
+        <p>Easy EMI option available. Quality coaching without financial burden.</p>
       </div>
     </div>
   </div>
@@ -873,7 +920,11 @@
     <div class="contact-grid">
       <div class="contact-info reveal">
         <div class="ci">
-          <div class="ic">📞</div>
+          <div class="ic">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
           <div>
             <h4>Call / WhatsApp</h4>
             <p><a href="tel:7588201439">7588201439</a></p>
@@ -909,7 +960,13 @@
         </div>
         <div class="contact-cta">
           <a href="https://wa.me/917588201439" target="_blank" rel="noopener" class="btn btn-wa">💬 Chat on WhatsApp</a>
-          <a href="tel:7588201439" class="btn btn-navy">📞 Call Now</a>
+          <a href="tel:7588201439" class="btn call-btn">
+  		<span class="call-icon">📞</span>
+  		<span>
+    		<small>Call Us Now</small>
+    		<strong>7588201439</strong>
+  		</span>
+	</a>
         </div>
       </div>
 
@@ -941,10 +998,10 @@
 
         <div class="mail-quick">
           <a href="mailto:admin@mentorax.in?subject=Admission%20Enquiry&body=Hi%20MentoraX%20team%2C%0A%0AI%27d%20like%20to%20enquire%20about%20admission%20for%3A%0A-%20Course%3A%20%0A-%20Student%20name%3A%20%0A-%20Class%3A%20%0A-%20Phone%3A%20%0A%0AThanks.">
-            <span class="ic">✉️</span> admin@mentorax.in <span style="opacity:.6;font-size:.75rem">(Student)</span>
+            <span class="ic">✉️</span> admin@mentorax.in
           </a>
           <a href="mailto:careers@mentorax.in?subject=BDE%20Application%20%E2%80%94%20MentoraX&body=Hi%20MentoraX%20team%2C%0A%0AI%27m%20applying%20for%20the%20BDE%20role.%0A%0AName%3A%20%0APhone%3A%20%0AExperience%3A%20%0A%0AResume%20attached.">
-            <span class="ic">💼</span> careers@mentorax.in <span style="opacity:.6;font-size:.75rem">(BDE)</span>
+            <span class="ic">💼</span> careers@mentorax.in
           </a>
         </div>
       </div>
